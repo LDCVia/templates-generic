@@ -1,7 +1,7 @@
 {
   "name": "bootcards",
   "description": "A cards-based UI framework for mobile and desktop apps, built on top of Bootstrap",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "license": "MIT",
   "keywords": [
     "css",
@@ -37,13 +37,13 @@
     "fastclick": "~1.0.3"
   },
   "homepage": "https://github.com/bootcards/bootcards",
-  "_release": "1.1.1",
+  "_release": "1.1.2",
   "_resolution": {
     "type": "version",
-    "tag": "1.1.1",
-    "commit": "e7590acde22be72a9d5d9f019ab3a56542ed148e"
+    "tag": "1.1.2",
+    "commit": "82ad83d51d44754dfc8b9529decd37af5ff09b88"
   },
   "_source": "git://github.com/bootcards/bootcards.git",
-  "_target": ">=1.1.1",
+  "_target": "*",
   "_originalSource": "bootcards"
 }
