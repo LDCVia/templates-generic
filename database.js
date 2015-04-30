@@ -5,11 +5,11 @@ var is_ios = /(iPad|iPhone|iPod)/g.test( navigator.userAgent );
 var is_android = (/(Android)/gi).test(navigator.userAgent);
 
 if(is_ios){
- $('<link rel="stylesheet" type="text/css" href="./bower_components/bootcards/dist/css/bootcards-ios.min.css" />').appendTo("head");
+ $('<link rel="stylesheet" type="text/css" href="./bower_components/bootcards/dist/css/bootcards-ios.css" />').appendTo("head");
 }else if(is_android){
-  $('<link rel="stylesheet" type="text/css" href="./bower_components/bootcards/dist/css/bootcards-android.min.css" />').appendTo("head");
+  $('<link rel="stylesheet" type="text/css" href="./bower_components/bootcards/dist/css/bootcards-android.css" />').appendTo("head");
 }else{
-  $('<link rel="stylesheet" type="text/css" href="./bower_components/bootcards/dist/css/bootcards-desktop.min.css" />').appendTo("head");
+  $('<link rel="stylesheet" type="text/css" href="./bower_components/bootcards/dist/css/bootcards-desktop.css" />').appendTo("head");
 }
 
 var settings = {
