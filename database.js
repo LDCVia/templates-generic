@@ -154,7 +154,8 @@ function openCollection(collection, start){
     var html = '<div class="row" id="collectiondata">';
     html += '<div class="col-sm-5 bootcards-list" id="list">';
     html += '<div class="panel panel-default">';
-    html += '<div class="panel-heading clearfix"><h3 class="panel-title">' + collection + '</h3></div>';
+    html += '<div class="panel-heading clearfix"><h3 class="panel-title pull-left">' + collection + '</h3>'
+    html += '</div>';
     html += '<div class="list-group">';
     html += '<div class="list-group-item" id="panel-header"></div>';
     for (var i=0; i<data.data.length; i++){
@@ -233,6 +234,8 @@ function openDocument(element, collection, unid){
       var html = '<div class="panel panel-default">';
       html += '<div class="panel-heading clearfix">';
       html += '<h3 class="panel-title pull-left">Document</h3>';
+      html += '<a class="btn btn-primary pull-right" onclick="createPDF(\'' + collection + '\', \'' + unid + '\')">';
+			html += '<i class="fa fa-file-pdf-o"></i><span>Export To PDF</span></a>';
       html += '</div>';
       html += '<div class="list-group">';
 
@@ -278,6 +281,11 @@ function openDocument(element, collection, unid){
       $("#listDetails").html(html);
     }
   });
+}
+
+function createPDF(collection, unid){
+  var url = settings.host + '/pdf/' + settings.db + '/' + collection + '/' + unid + '?apikey=' + settings.apikey;
+  window.open(url);
 }
 
 function getMetaData(collection, callback){
